@@ -26,8 +26,8 @@ export default function Dictionary() {
           onChange={handleChange}
         />
       </form>
-      <div className="row justify-content-center">
-        <div className="info col-6 ">
+      <div className="row justify-content-center m-3">
+        <div className="info col-md-6">
           <Result info={info} />
         </div>
       </div>

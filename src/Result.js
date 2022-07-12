@@ -1,5 +1,7 @@
 import React from "react";
 import "./Dictionary.css";
+import Example from "./Example";
+import Synonyms from "./Synonyms";
 export default function Result(props) {
   if (props.info.meanings) {
     return (
@@ -12,8 +14,13 @@ export default function Result(props) {
                 {" "}
                 <em>{defini.partOfSpeech}</em>
               </h4>
-              <p> {defini.definitions[0].definition}</p>
-              <p> {defini.definitions[0].example}</p>
+              <p>
+                <strong>Definition : </strong>
+                {defini.definitions[0].definition}
+              </p>
+              <Example ex={defini.definitions[0].example} />
+
+              <Synonyms syn={defini.definitions[0].synonyms} />
             </div>
           );
         })}

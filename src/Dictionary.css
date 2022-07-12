@@ -1,6 +1,10 @@
 .info {
   text-align: center;
 }
-.word {
+.word,
+strong {
   color: rgb(248, 171, 184);
+}
+.synonyms {
+  color: gray;
 }
