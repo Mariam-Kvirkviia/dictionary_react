@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
+import Result from "./Result";
 export default function Dictionary() {
   let [input, setInput] = useState("");
   let [info, setInfo] = useState({});
   function showData(response) {
-    console.log(response.data[0].meanings[0].definitions[0].definition);
-    setInfo({
-      name: response.data[0].word,
-      partOfSpeach: response.data[0].meanings[0].partOfSpeech,
-      def: response.data[0].meanings[0].definitions[0].definition,
-    });
+    setInfo(response.data[0]);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -32,9 +28,7 @@ export default function Dictionary() {
       </form>
       <div className="row justify-content-center">
         <div className="info col-6 ">
-          <h4>{info.name}</h4>
-          <h4>{info.partOfSpeach}</h4>
-          <p>{info.def}</p>
+          <Result info={info} />
         </div>
       </div>
     </div>
