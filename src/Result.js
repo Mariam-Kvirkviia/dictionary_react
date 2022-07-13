@@ -1,12 +1,14 @@
 import React from "react";
 import "./Dictionary.css";
 import Example from "./Example";
+import Phonetics from "./Phonetics";
 import Synonyms from "./Synonyms";
 export default function Result(props) {
   if (props.info.meanings) {
     return (
       <div>
-        <h3 className="word">{props.info.word}</h3>
+        <h2 className="word">{props.info.word}</h2>
+        <Phonetics phonetics={props.info.phonetics} />
         {props.info.meanings.map(function (defini, index) {
           return (
             <div key={index}>
