@@ -15,10 +15,10 @@ export default function Result(props) {
           return (
             <div key={index}>
               <section className=" col-12 my-4 py-4">
-                <h4>
+                <h3>
                   {" "}
                   <em>{defini.partOfSpeech}</em>
-                </h4>
+                </h3>
 
                 <p>
                   <strong>Definition : </strong>
@@ -27,9 +27,8 @@ export default function Result(props) {
 
                 <Example ex={defini.definitions[0].example} />
               </section>
-              <section className=" col-12 my-4 py-4">
-                <Synonyms syn={defini.definitions[0].synonyms} />
-              </section>
+
+              <Synonyms syn={defini.definitions[0].synonyms} />
             </div>
           );
         })}

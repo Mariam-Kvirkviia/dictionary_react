@@ -1,16 +1,29 @@
 * {
   color: #383355;
-  background-color: #f9f7fe;
+  background-color: #f9f9f9;
+}
+p,
+li,
+strong {
+  font-size: 20px;
+}
+.footer {
+  font-size: 15px;
+}
+
+:root {
+  --primary-color: #ff83a8;
 }
 .word,
 strong {
-  color: #ff83a8;
+  color: var(--primary-color);
 }
-.synonyms {
-  color: gray;
+.synonyms li {
+  display: inline;
+  color: rgb(97, 97, 97);
 }
 .search {
-  border: 1px solid #ff83a8;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
   padding: 10px;
 }
@@ -18,4 +31,8 @@ section {
   border-radius: 20px;
   border: 1px rgb(182, 182, 182);
   box-shadow: 3px 5px 17px #f5dee5;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
