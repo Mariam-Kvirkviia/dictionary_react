@@ -1,10 +1,21 @@
-.info {
-  text-align: center;
+* {
+  color: #383355;
+  background-color: #f9f7fe;
 }
 .word,
 strong {
-  color: rgb(248, 171, 184);
+  color: #ff83a8;
 }
 .synonyms {
   color: gray;
+}
+.search {
+  border: 1px solid #ff83a8;
+  border-radius: 10px;
+  padding: 10px;
+}
+section {
+  border-radius: 20px;
+  border: 1px rgb(182, 182, 182);
+  box-shadow: 3px 5px 17px #f5dee5;
 }

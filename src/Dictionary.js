@@ -19,15 +19,20 @@ export default function Dictionary() {
 
   return (
     <div>
-      <form className="text-center m-5" onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter a word"
-          onChange={handleChange}
-        />
-      </form>
-      <div className="row justify-content-center m-3">
-        <div className="info col-md-6">
+      <section className=" col-12 my-4 py-4">
+        <h3>What word do you want to look up?</h3>
+        <form className="text-center m-4" onSubmit={handleSubmit}>
+          <input
+            className="search col-8"
+            type="search"
+            placeholder="Enter a word"
+            onChange={handleChange}
+          />
+        </form>
+      </section>
+
+      <div className="row justify-content-center ">
+        <div>
           <Result info={info} />
         </div>
       </div>
