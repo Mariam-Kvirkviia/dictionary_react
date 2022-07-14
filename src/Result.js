@@ -8,7 +8,9 @@ export default function Result(props) {
     return (
       <div>
         <section className=" col-12 my-4 py-4">
-          <h2 className="word">{props.info.word}</h2>
+          <h2 className="word" value="words">
+            {props.info.word}
+          </h2>
           <Phonetics phonetics={props.info.phonetics} />
         </section>
         {props.info.meanings.map(function (defini, index) {

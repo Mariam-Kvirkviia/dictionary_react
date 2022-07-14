@@ -5,7 +5,7 @@ function App() {
     <div className="row justify-content-center">
       <div className="App text-center col-sm-8 px-3 ">
         <h1 className="my-4">Dictionary</h1>
-        <Dictionary defaultWord="destiny" />
+        <Dictionary defaultWord="Destiny" />
       </div>
       <p className="text-center footer">
         This project was coded by{" "}

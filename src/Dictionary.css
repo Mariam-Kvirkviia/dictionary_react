@@ -10,7 +10,9 @@ strong {
 .footer {
   font-size: 15px;
 }
-
+.word {
+  text-transform: capitalize;
+}
 :root {
   --primary-color: #ff83a8;
 }
