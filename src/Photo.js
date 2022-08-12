@@ -4,12 +4,12 @@ export default function Photo(props) {
   if (props.photo) {
     return (
       <section className=" col-12 my-4 py-4">
-        <div className="row">
+        <div className="row mx-4 photos">
           {props.photo.map(function (ph, index) {
             return (
-              <div className="col-md-4 p-4">
+              <div className=" p-4">
                 <img
-                  className="img-fluid"
+                  className="img-fluid photo"
                   key={index}
                   src={ph.src.tiny}
                   alt="whatyou are looking for"

@@ -3,7 +3,7 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="row justify-content-center">
-      <div className="App text-center col-sm-8 px-3 ">
+      <div className="App text-center col-sm-8 px-4">
         <h1 className="my-4">Dictionary</h1>
         <Dictionary defaultWord="Destiny" />
       </div>
